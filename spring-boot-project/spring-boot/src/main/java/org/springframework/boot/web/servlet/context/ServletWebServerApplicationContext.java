@@ -74,7 +74,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
  * <p>
  * For more advanced configuration, the context can instead define beans that implement
  * the {@link ServletContextInitializer} interface (most often
- * {@link ServletRegistrationBean}s and/or {@link FilterRegistrationBean}s). To prevent
+ * {@link ServletRegistrationBean}s and/or {@link FilterRegistrationBean}s). To prevent（防止）
  * double registration, the use of {@link ServletContextInitializer} beans will disable
  * automatic Servlet and Filter bean registration.
  * <p>
@@ -88,6 +88,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
  * @see XmlServletWebServerApplicationContext
  * @see ServletWebServerFactory
  */
+
 public class ServletWebServerApplicationContext extends GenericWebApplicationContext
 		implements ConfigurableWebServerApplicationContext {
 

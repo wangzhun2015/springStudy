@@ -9,7 +9,7 @@
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express wor implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
@@ -34,18 +34,21 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+/**
+ * ServletWebServerApplicationContext 该类 接收带注释的类作为输入。
+ */
 
 /**
  * {@link ServletWebServerApplicationContext} that accepts annotated classes as input - in
  * particular {@link org.springframework.context.annotation.Configuration @Configuration}
  * -annotated classes, but also plain {@link Component @Component} classes and JSR-330
- * compliant classes using {@code javax.inject} annotations. Allows for registering
- * classes one by one (specifying class names as config location) as well as for classpath
+ * compliant（兼容的） classes using {@code javax.inject} annotations. Allows for registering
+ * classes one by one (specifying（指定） class names as config location) as well as for classpath
  * scanning (specifying base packages as config location).
  * <p>
- * Note: In case of multiple {@code @Configuration} classes, later {@code @Bean}
- * definitions will override ones defined in earlier loaded files. This can be leveraged
- * to deliberately override certain bean definitions via an extra Configuration class.
+ * Note: In case of multiple（多个） {@code @Configuration} classes, later {@code @Bean}
+ * definitions will override ones defined in earlier loaded files. This can be leveraged（杠杆）
+ * to deliberately（故意） override certain bean definitions via an extra Configuration class.
  *
  * @author Phillip Webb
  * @see #register(Class...)
